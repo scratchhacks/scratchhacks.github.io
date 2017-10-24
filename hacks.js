@@ -1,7 +1,7 @@
 var accounttarget = "";
 function starthacks() {
   alert("scratchhacks loaded");
-document.write("<hr><br><center><h1>ScratchHacks</h1><h3>Beta 1</h3><br><a href="#" onclick="startcommentspam();"><h4>Start account raid</h4></a></center>");
+document.write('<hr><br><center><h1>ScratchHacks</h1><h3>Beta 1</h3><br><a href="#" onclick="startcommentspam();"><h4>Start account raid</h4></a></center>');
 }
  function dofunstuff(fn, timeout, interval) {
     var startTime = (new Date()).getTime();
