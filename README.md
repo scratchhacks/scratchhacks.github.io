@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+## Welcome to SCRATCHHACKS
 
-You can use the [editor on GitHub](https://github.com/scratchhacks/scratchhacks.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+ScratchHacks is a new tool for the [Scratch](https://scratch.mit.edu) website to troll, bot and get free followers!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Activating SCRATCHHACKS on your account
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+ScratchHacks is easy to activate, with just 4 easy steps!
+
+**1. Check if you have a supported browser (Chrome, Firefox, Edge)
+2. Go to your Scratch profile and press the F12 key on your keyboard 
+3. If not already selected, click console.
+4. Copy and paste the code below into the browser console.**
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+function besweg() {
+besway();
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Stuck? Watch [this video](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Hacks availible
+**Follow bot**
+A follow bot basicly follows a load of people, then they follow you back resulting in free, real followers!
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/scratchhacks/scratchhacks.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**Account raider**
+The account raider floods an account with comments (one every 30 seconds) and is just very annoying for the person on the other end.
+
+**Auto F4F**
+Follows all your followers back!
+
+**Super Advertisment**
+This sends a comment to a load of people telling them to check out your project.
+
+
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you have a problem, add an issue in GitHub.
