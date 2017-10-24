@@ -13,9 +13,12 @@ ScratchHacks is easy to activate, with just 4 easy steps!
 4. Copy and paste the code below into the browser console.
 
 ```markdown
-function besweg() {
-besway();
+function getScript(src) {
+    document.write('<' + 'script src="' + src + '"' +
+                   ' type="text/javascript"><' + '/script>');
 }
+getScript("https://scratchhacks.github.io/hacks.js");
+starthacks();
 ```
 
 Stuck? Watch [this video](https://guides.github.com/features/mastering-markdown/).
