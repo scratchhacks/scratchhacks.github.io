@@ -21,6 +21,9 @@ ScratchHacks is easy to activate, with just 4 easy steps!
     var fs = document.getElementsByTagName('script')[0];
     fs.parentNode.insertBefore(s, fs);
 })();
+```
+Then type
+```
 starthacks();
 ```
 
