@@ -7,10 +7,10 @@ ScratchHacks is a new tool for the [Scratch](https://scratch.mit.edu) website to
 
 ScratchHacks is easy to activate, with just 4 easy steps!
 
-**1. Check if you have a supported browser (Chrome, Firefox, Edge)
+1. Check if you have a supported browser (Chrome, Firefox, Edge)
 2. Go to your Scratch profile and press the F12 key on your keyboard 
 3. If not already selected, click console.
-4. Copy and paste the code below into the browser console.**
+4. Copy and paste the code below into the browser console.
 
 ```markdown
 function besweg() {
