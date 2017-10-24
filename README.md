@@ -47,3 +47,4 @@ This sends a comment to a load of people telling them to check out your project.
 ### Support or Contact
 
 If you have a problem, add an issue in GitHub.
+Scratch hacks are being developed by me in Moscow, Russia!
