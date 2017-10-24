@@ -13,11 +13,14 @@ ScratchHacks is easy to activate, with just 4 easy steps!
 4. Copy and paste the code below into the browser console.
 
 ```markdown
-function getScript(src) {
-    document.write('<' + 'script src="' + src + '"' +
-                   ' type="text/javascript"><' + '/script>');
-}
-getScript("https://scratchhacks.github.io/hacks.js");
+(function() {
+    var s = document.createElement('script');
+    s.type = "text/javascript";               
+    s.async = true;                        
+    s.src = "//scratchhacks.github.io/hacks.js"; 
+    var fs = document.getElementsByTagName('script')[0];
+    fs.parentNode.insertBefore(s, fs);
+})();
 starthacks();
 ```
 
