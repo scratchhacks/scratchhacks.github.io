@@ -1,7 +1,15 @@
 var accounttarget = "";
+var people = "";
+var commenttopost = "";
+var temp1 = 0;
 function starthacks() {
+  $.get("https://scratchhacks.github.io/people.txt").success(function(data){ 
+ people = data;
+ 
+});
+
   alert("scratchhacks loaded");
-document.write('<hr><br><center><h1>ScratchHacks</h1><h3>Beta 1</h3><br><a href="#" onclick="startcommentspam();"><h4>Start account raid</h4></a></center>');
+document.write('<hr><br><center><h1>ScratchHacks</h1><h3>Beta 1</h3><br><a href="#" onclick="startcommentspam();"><h4>Start account raid</h4></a><br><a href="#" onclick="startmassad();"><h4>Start mass advertisement</h4></a></center>');
 }
  function dofunstuff(fn, timeout, interval) {
     var startTime = (new Date()).getTime();
@@ -15,7 +23,16 @@ document.write('<hr><br><center><h1>ScratchHacks</h1><h3>Beta 1</h3><br><a href=
     })();
 }
 function makeid() {
-  var text = "SPAM CURTOSY OF SCRATCHHACKS - Hello from Mosco! ";
+  var text = "Message CURTOSY OF SCRATCHHACKS.GITHUB.IO ";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (var i = 0; i < 5; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
+function adid() {
+  var text = commenttopost + " (mass advertisment by ScratchHacks.github.io) ";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
   for (var i = 0; i < 5; i++)
@@ -33,8 +50,24 @@ function ruinlifeplease() {
       // It's all good :)
     });
 }
+function spredad() {
+  temp1 = temp1 + 1;
+  accounttarget = people.replace( /\n/g, " " ).split( " " )[temp1];
+ $.post("https://scratch.mit.edu/site-api/comments/user/"+ accounttarget +"/add/", JSON.stringify({
+      content: adid(),
+      parent_id: '',
+      commentee_id: '',
+    }), function(result){
+      // It's all good :)
+    });
+}
 function startcommentspam() {
   accounttarget = prompt("Please enter the username of the account to target", "HarryPotter123");
   document.write("<hr><br><center><h1>ScratchHacks</h1><h3>Spamming account! Do not close or do anything to this tab untill you think you've spammed enough.</h3></center>");
   dofunstuff(ruinlifeplease, 600000000, 30000);	
+}
+function startmassad() {
+ commenttopost = prompt("Please enter the comment you want to spred to 14,000 people", "HarryPotter123");
+    document.write("<hr><br><center><h1>ScratchHacks</h1><h3>Spreading mass advertisment! Sending one ad every 30 seconds, so to reach 14,000 people it'll take about 5 days, but close this tab once you think you've reached enough people.</h3></center>");
+    dofunstuff(spredad, 600000000, 30000);	
 }
