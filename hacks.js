@@ -2,6 +2,22 @@ var accounttarget = "";
 var people = "";
 var commenttopost = "";
 var temp1 = 0;
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
 function starthacks() {
   $.get("https://scratchhacks.github.io/people.txt").success(function(data){ 
  people = data;
@@ -67,7 +83,7 @@ function startcommentspam() {
   dofunstuff(ruinlifeplease, 600000000, 30000);	
 }
 function startmassad() {
- commenttopost = prompt("Please enter the comment you want to spred to 14,000 people", "HarryPotter123");
+ commenttopost = prompt("Please enter the comment you want to spred to 14,000 people(KEEP IT SHORT OR IT WON'T WORK)", "HarryPotter123");
     document.write("<hr><br><center><h1>ScratchHacks</h1><h3>Spreading mass advertisment! Sending one ad every 30 seconds, so to reach 14,000 people it'll take about 5 days, but close this tab once you think you've reached enough people.</h3></center>");
     dofunstuff(spredad, 600000000, 30000);	
 }
